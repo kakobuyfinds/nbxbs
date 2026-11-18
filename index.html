@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="theme-color" content="#123b2d">
+<title>LitBuy spreadsheet | Product Finds & Buying Checklist</title>
+<meta name="description" content="Explore LitBuy spreadsheet finds with a real HipobuyFind catalog selection, searchable categories, CNY reference prices, sizing tips and a parcel budget planner.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="LitBuy spreadsheet — Find your next everyday favorite">
+<meta property="og:description" content="Browse product references, compare your shortlist and understand the costs before ordering. Independent guide with HipobuyFind catalog selections.">
+<meta name="twitter:card" content="summary">
+<style>
+:root{--ink:#142e25;--muted:#586a61;--green:#123b2d;--lime:#ddf3a3;--paper:#f7f8f2;--line:#dce2d7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}button,input,select{font:inherit}button,a,input,select{outline-offset:5px}button{cursor:pointer}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.skip{position:absolute;left:15px;top:-80px;background:white;padding:12px;z-index:10}.skip:focus{top:10px}header{border-bottom:1px solid var(--line);background:var(--paper)}.nav{display:flex;justify-content:space-between;align-items:center;padding:23px 0;gap:20px}.brand{text-decoration:none;font-size:20px;font-weight:850;letter-spacing:-1px}.brand span{background:var(--green);color:var(--lime);padding:5px 9px;border-radius:9px;margin-right:8px}.nav small{color:var(--muted)}.btn{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:12px 23px;border:1px solid var(--green);border-radius:9px;text-decoration:none;font-weight:750;background:var(--green);color:white}.btn.light{background:var(--lime);color:var(--green);border-color:var(--lime)}.btn.outline{background:transparent;color:var(--green)}.hero{padding:77px 0 58px;display:grid;grid-template-columns:1.3fr .7fr;gap:65px;align-items:center}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:2px;font-weight:800;color:var(--muted)}h1{font-size:clamp(44px,6.3vw,78px);line-height:1.07;letter-spacing:-3.5px;margin:20px 0}h1 em{font-style:normal;color:#587b43}h2{font-size:clamp(27px,3.5vw,39px);line-height:1.2;letter-spacing:-1.2px;margin:10px 0 16px}h3{line-height:1.35}.intro{max-width:620px;color:var(--muted);font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin:27px 0 15px}.note{font-size:13px;color:var(--muted)}.hero-panel{background:var(--green);color:white;border-radius:20px;padding:32px;transform:rotate(2deg)}.hero-panel .eyebrow{color:var(--lime)}.hero-panel h2{font-size:31px}.hero-panel ol{padding-left:22px}.hero-panel li{padding:9px 0;border-bottom:1px solid #ffffff24}.strip{display:flex;justify-content:space-between;gap:15px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:19px 0;font-size:13px;font-weight:700}.section{padding:62px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:25px}.section-head p{max-width:590px;color:var(--muted);margin-bottom:0}.tools{display:grid;grid-template-columns:1fr 190px 190px;gap:13px;margin:24px 0}.field label{display:block;font-size:12px;font-weight:750;margin-bottom:6px}.field input,.field select{width:100%;border:1px solid #bdcbbd;background:white;border-radius:8px;padding:12px;color:var(--ink);min-height:48px}.result{font-size:13px;color:var(--muted);margin:16px 0}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:19px}.card{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:white;display:flex;flex-direction:column}.card[hidden]{display:none}.photo{aspect-ratio:1;background:#e8ece3;overflow:hidden;position:relative}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}.card:hover img{transform:scale(1.035)}.photo .tag{position:absolute;bottom:10px;left:10px;background:#ffffffed;border-radius:5px;padding:3px 8px;font-size:11px;font-weight:750}.card-body{padding:17px;display:flex;flex:1;flex-direction:column}.card h3{font-size:16px;margin:4px 0 12px}.price{font-size:21px;font-weight:800;margin-top:auto}.id{color:var(--muted);font-size:12px}.card .btn{margin-top:14px;min-height:40px;padding:8px;font-size:13px}.empty{padding:35px;background:white;border:1px dashed var(--line);border-radius:12px;text-align:center}.source{border-left:3px solid #7d985c;padding:5px 0 5px 17px;margin-top:26px;color:var(--muted);font-size:13px}.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:25px}.guide-card{border-top:2px solid var(--green);padding:22px 0}.num{color:#6c8850;font-weight:850;font-size:13px}.guide-card p{color:var(--muted)}.dark{background:var(--green);color:white;border-radius:20px;padding:38px;display:grid;grid-template-columns:1fr 1fr;gap:42px}.dark p{color:#d5e2d6}.dark .eyebrow{color:var(--lime)}.calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.dark label{color:#e7f0e5}.total{padding:18px 0 0;font-size:29px;font-weight:800;color:var(--lime)}.calc-note{font-size:12px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;margin:23px 0;background:white}th,td{text-align:left;padding:16px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:13px;background:#edf1e7}td{font-size:14px}details{border-bottom:1px solid var(--line);padding:19px 0}summary{font-weight:750;cursor:pointer;padding-right:20px}details p{max-width:850px;color:var(--muted)}.ending{text-align:center;background:#eaf0df;padding:42px;border-radius:18px}.ending p{color:var(--muted)}footer{border-top:1px solid var(--line);padding:30px 0 40px;font-size:12px;color:var(--muted)}footer p{max-width:950px}.footer-row{display:flex;justify-content:space-between;gap:20px}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:25px;padding-top:45px}.hero-panel{transform:none}.grid{grid-template-columns:repeat(2,1fr)}.guide-grid{grid-template-columns:1fr}.dark{grid-template-columns:1fr}.nav small{display:none}.section-head{display:block}}
+@media(max-width:560px){.wrap{width:calc(100% - 28px)}.nav{padding:16px 0}.nav .btn{font-size:12px;padding:9px 11px;min-height:40px}.brand{font-size:16px}.brand span{margin-right:4px}h1{letter-spacing:-2px}.hero{padding:35px 0}.hero-panel{padding:24px}.strip{flex-direction:column;gap:6px}.tools{grid-template-columns:1fr 1fr}.tools .field:first-child{grid-column:1/-1}.grid{gap:10px}.card-body{padding:12px}.card h3{font-size:14px}.section{padding:42px 0}.dark{padding:24px;gap:18px}.ending{padding:28px 19px}.footer-row{flex-direction:column}.calc-grid{gap:10px}.section-head .btn{margin-top:16px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"WebPage",
+ "name":"LitBuy spreadsheet | Product Finds & Buying Checklist",
+ "description":"Independent product discovery guide featuring a selected HipobuyFind catalog snapshot, CNY reference prices and practical buying checklists.",
+ "inLanguage":"en",
+ "mainEntity":{
+  "@type":"FAQPage",
+  "mainEntity":[
+   {"@type":"Question","name":"Is this the official LitBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"No. This is an independent discovery guide. The catalog selection comes from HipobuyFind, and the shopping buttons open HipobuyFind."}},
+   {"@type":"Question","name":"Do these prices include international shipping?","acceptedAnswer":{"@type":"Answer","text":"No. The displayed CNY amounts are catalog reference prices. Confirm the selected option, domestic delivery, international shipping, taxes and any service fees separately."}},
+   {"@type":"Question","name":"Are the product images QC photos?","acceptedAnswer":{"@type":"Answer","text":"No. These are source catalog listing images. Request and review photos of your own order before approving shipment."}},
+   {"@type":"Question","name":"Can every product be purchased through LitBuy?","acceptedAnswer":{"@type":"Answer","text":"Compatibility has not been verified. Retrieve the original marketplace link and confirm support and product restrictions with your chosen purchasing service before paying."}}
+  ]
+ }
+}
+</script>
+<!--
+File: index.html
+
+Research references:
+https://litbuyex.com/
+https://www.litbuybestspreadsheet.com/
+https://litbuyspreadsheet.io/
+Search results are a research sample, not a certified Google first-page ranking report.
+Applied improvements: readable static product cards; actual source IDs and snapshot prices;
+accessible search/category/budget filters; original sizing and QC checklists;
+transparent destination disclosures; an editable cost worksheet; visible FAQ matching JSON-LD.
+No copied competitor text, invented inventory totals, reviews or stock guarantees.
+
+Catalog source: https://hipobuyfind.com/
+Snapshot reviewed 2026-11-19. Images are remote source listing images.
+Product names are shortened for clarity; source item IDs are retained.
+All shopping links intentionally open https://hipobuyfind.com.
+
+Deployment/indexing status: NOT submitted. No deployed URL or verified webmaster access
+was supplied. HTML alone cannot submit a site to Google or Bing.
+After deployment, set an absolute self-referencing canonical for the final public URL,
+publish a sitemap with actual URLs and make it discoverable in robots.txt.
+Verify the property in Google Search Console and Bing Webmaster Tools, submit the
+sitemap, and request inspection/indexing of the deployed homepage.
+Do not set the canonical to HipobuyFind unless this page is actually hosted there.
+-->
+<link rel="canonical" href="https://kakobuyfinds.github.io/nbxbs/">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="https://hipobuyfind.com"><span>L.</span>THE FINDS EDIT</a>
+  <small>Independent discovery · HipobuyFind catalog selection</small>
+  <a class="btn outline" href="https://hipobuyfind.com">Open full catalog ↗</a>
+ </div>
+</header>
+<main id="main" class="wrap">
+ <section class="hero" aria-labelledby="hero-title">
+  <div>
+   <div class="eyebrow">Less searching. More considered choices.</div>
+   <h1 id="hero-title">LitBuy spreadsheet.<br><em>Find your next favorite.</em></h1>
+   <p class="intro">Explore shoes, layers and everyday accessories in one focused shortlist. Compare real catalog references, check your measurements and plan the full cost before you order.</p>
+   <div class="actions">
+    <a class="btn" href="https://hipobuyfind.com">LitBuy spreadsheet ↗</a>
+    <a class="btn light" href="https://hipobuyfind.com">Buy it now ↗</a>
+   </div>
+   <p class="note">Both buttons open HipobuyFind. This independent guide is not operated by LitBuy and does not process orders.</p>
+  </div>
+  <aside class="hero-panel" aria-label="Quick buying checklist">
+   <div class="eyebrow">The thoughtful buyer's checklist</div>
+   <h2>A good find starts with the details.</h2>
+   <ol>
+    <li>Match the exact style, size and quantity.</li>
+    <li>Confirm the current listing price.</li>
+    <li>Allow for delivery, fees and taxes.</li>
+    <li>Review your own order’s QC photos.</li>
+   </ol>
+  </aside>
+ </section>
+ <div class="strip">
+  <span>01 / Real source catalog references</span>
+  <span>02 / Searchable product selection</span>
+  <span>03 / Clear costs before checkout</span>
+ </div>
+
+ <section class="section" aria-labelledby="catalog-title">
+  <div class="section-head">
+   <div>
+    <div class="eyebrow">The catalog edit</div>
+    <h2 id="catalog-title">Browse the finds.</h2>
+    <p>A selected snapshot imported from HipobuyFind. Search these eight references or open the full catalog for more categories and current listing details.</p>
+   </div>
+   <a href="https://hipobuyfind.com" class="btn outline">Explore all finds ↗</a>
+  </div>
+  <div class="tools" role="search" aria-label="Filter the catalog selection">
+   <div class="field"><label for="search">Search this selection</label><input id="search" type="search" placeholder="Try sneakers, hoodie or backpack…" autocomplete="off"></div>
+   <div class="field"><label for="category">Category</label><select id="category"><option value="all">All categories</option><option>Shoes</option><option>Hoodies</option><option>T-Shirts</option><option>Bags</option></select></div>
+   <div class="field"><label for="budget">CNY reference budget</label><select id="budget"><option value="999999">Any price</option><option value="150">Up to ¥150</option><option value="250">Up to ¥250</option><option value="350">Up to ¥350</option></select></div>
+  </div>
+  <p class="result" id="result" role="status" aria-live="polite">8 catalog references · CNY item prices · Shipping extra</p>
+  <div class="grid" id="products">
+   <article class="card" data-category="Shoes" data-price="145">
+    <div class="photo"><img src="https://si.geilicdn.com/open1623462477-1234478995-000d00000194e28adce90aa08290_1000_1000.jpg" alt="Black and red basketball sneakers, source listing image" width="400" height="400" loading="lazy"><span class="tag">Shoes</span></div>
+    <div class="card-body"><span class="id">Source item 149969</span><h3>Black &amp; Red Basketball Sneakers</h3><div class="price">¥145.00</div><span class="id">Catalog reference · CNY</span><a class="btn" href="https://hipobuyfind.com">Buy it now ↗</a></div>
+   </article>
+   <article class="card" data-category="Shoes" data-price="350">
+    <div class="photo"><img src="https://si.geilicdn.com/open1700230128-1234478995-64a0000001987b40d1cb0a8115c2_1080_1440.jpg" alt="Cream chunky sneakers with wide laces, source listing image" width="400" height="400" loading="lazy"><span class="tag">Shoes</span></div>
+    <div class="card-body"><span class="id">Source item 148191</span><h3>Cream Chunky Sneakers with Wide Laces</h3><div class="price">¥350.00</div><span class="id">Catalog reference · CNY</span><a class="btn" href="https://hipobuyfind.com">Buy it now ↗</a></div>
+   </article>
+   <article class="card" data-category="Shoes" data-price="400">
+    <div class="photo"><img src="https://si.geilicdn.com/open1700230128-1234478995-35ac000001987b42037a0aa043f9_1440_1440.jpg" alt="Leather dress shoes, source listing image" width="400" height="400" loading="lazy"><span class="tag">Shoes</span></div>
+    <div class="card-body"><span class="id">Source item 148189</span><h3>Leather Dress Shoes</h3><div class="price">¥400.00</div><span class="id">Catalog reference · CNY</span><a class="btn" href="https://hipobuyfind.com">Buy it now ↗</a></div>
+   </article>
+   <article class="card" data-category="Shoes" data-price="450">
+    <div class="photo"><img src="https://si.geilicdn.com/open1700230128-1234478995-6d07000001987b436b390a22d249_800_800.jpg" alt="Black canvas low-top sneakers with gum sole, source listing image" width="400" height="400" loading="lazy"><span class="tag">Shoes</span></div>
+    <div class="card-body"><span class="id">Source item 148188</span><h3>Black Canvas Low-Tops with Gum Sole</h3><div class="price">¥450.00</div><span class="id">Catalog reference · CNY</span><a class="btn" href="https://hipobuyfind.com">Buy it now ↗</a></div>
+   </article>
+   <article class="card" data-category="Hoodies" data-price="230">
+    <div class="photo"><img src="https://si.geilicdn.com/open1806012509-1234478995-6c270000019717ac043f0a23b491_800_800.jpg" alt="Essentials oversized hoodie, source listing image" width="400" height="400" loading="lazy"><span class="tag">Hoodies</span></div>
+    <div class="card-body"><span class="id">Source item 154948</span><h3>Essentials Oversized Hoodie</h3><div class="price">¥230.00</div><span class="id">Catalog reference · CNY</span><a class="btn" href="https://hipobuyfind.com">Buy it now ↗</a></div>
+   </article>
+   <article class="card" data-category="Hoodies" data-price="210">
+    <div class="photo"><img src="https://si.geilicdn.com/pcitem901956541713-2b63000001971aeb92a50a23038e_1600_1600.jpg" alt="Essentials hoodie, source listing image" width="400" height="400" loading="lazy"><span class="tag">Hoodies</span></div>
+    <div class="card-body"><span class="id">Source item 154946</span><h3>Essentials Hoodie</h3><div class="price">¥210.00</div><span class="id">Catalog reference · CNY</span><a class="btn" href="https://hipobuyfind.com">Buy it now ↗</a></div>
+   </article>
+   <article class="card" data-category="T-Shirts" data-price="168">
+    <div class="photo"><img src="https://si.geilicdn.com/open1806012509-1234478995-7ec4000001971084be030a22d249_1920_1920.jpg" alt="Trapstar T-shirt, source listing image" width="400" height="400" loading="lazy"><span class="tag">T-Shirts</span></div>
+    <div class="card-body"><span class="id">Source item 154957</span><h3>Trapstar T-Shirt</h3><div class="price">¥168.00</div><span class="id">Catalog reference · CNY</span><a class="btn" href="https://hipobuyfind.com">Buy it now ↗</a></div>
+   </article>
+   <article class="card" data-category="Bags" data-price="340">
+    <div class="photo"><img src="https://si.geilicdn.com/pcitem901921648802-7dbe000001955a1df4c10a210349_1080_1080.jpg" alt="Beige quilted drawstring mini backpack, source listing image" width="400" height="400" loading="lazy"><span class="tag">Bags</span></div>
+    <div class="card-body"><span class="id">Source item 154850</span><h3>Beige Quilted Mini Backpack</h3><div class="price">¥340.00</div><span class="id">Catalog reference · CNY</span><a class="btn" href="https://hipobuyfind.com">Buy it now ↗</a></div>
+   </article>
+  </div>
+  <p class="empty" id="empty" hidden>No matching references. Try a broader search or reset the category and budget.</p>
+  <noscript><p>All eight catalog references are displayed. Enable JavaScript to use the filters and cost worksheet.</p></noscript>
+  <div class="source">Source: <a href="https://hipobuyfind.com">HipobuyFind</a> · Snapshot reviewed <time datetime="2026-11-19">19 November 2026</time>. Prices may change by option or quantity. Images are listing photos; stock, authenticity and purchasing-service compatibility have not been verified. Buttons open the catalog homepage; use the source item ID to locate a reference.</div>
+ </section>
+
+ <section class="section" aria-labelledby="guide-title">
+  <div class="eyebrow">From discovery to decision</div>
+  <h2 id="guide-title">How to use a LitBuy spreadsheet.</h2>
+  <p>A LitBuy spreadsheet is a product discovery list used when researching purchases through a shopping agent. This page provides a HipobuyFind selection for comparison. An agent name in a catalog title does not confirm that a product is supported by that service.</p>
+  <div class="guide-grid">
+   <article class="guide-card"><span class="num">01 / BUILD YOUR SHORTLIST</span><h3>Save the exact reference.</h3><p>Choose a product type and budget, then record its item ID, selected color and size. Keep the original marketplace URL when available. Similar photos can appear across different listings, so compare the actual option rather than the headline alone.</p></article>
+   <article class="guide-card"><span class="num">02 / VERIFY THE PURCHASE</span><h3>Check the listing and service.</h3><p>Open HipobuyFind to locate your item. Retrieve the source listing and confirm that your chosen agent supports it. Check the current option price, seller’s size chart, product restrictions and return conditions before paying.</p></article>
+   <article class="guide-card"><span class="num">03 / REVIEW BEFORE SHIPPING</span><h3>Inspect your own order.</h3><p>Compare warehouse photos with the order details. Ask for useful measurements and close-ups when needed. Resolve a wrong size, missing piece or visible defect before authorizing the international parcel.</p></article>
+  </div>
+ </section>
+
+ <section class="section" aria-labelledby="compare-title">
+  <div class="eyebrow">Small details, better decisions</div>
+  <h2 id="compare-title">What to check for each product type.</h2>
+  <div class="table-wrap">
+   <table>
+    <thead><tr><th scope="col">Product</th><th scope="col">Record before ordering</th><th scope="col">Check in order photos</th></tr></thead>
+    <tbody>
+     <tr><th scope="row">Sneakers &amp; shoes</th><td>Size system, foot-length guidance, exact colorway and whether packaging is included.</td><td>Size labels on both shoes, matching pair, sole edges and visible construction.</td></tr>
+     <tr><th scope="row">Hoodies &amp; tees</th><td>Chest width, garment length, sleeve length and whether measurements are flat or circumferential.</td><td>Requested measurements, fabric appearance, print placement and seams.</td></tr>
+     <tr><th scope="row">Bags</th><td>Height, width, depth, strap dimensions, included accessories and selected design.</td><td>Closures, lining, straps, hardware and all components listed in the order.</td></tr>
+     <tr><th scope="row">Sets &amp; bundles</th><td>Whether the price buys one piece, a complete set or multiple units.</td><td>Number of pieces and size labels for each component.</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <p class="note">For clothing, measure a garment you already like on a flat surface and compare equivalent measurements. A familiar letter size alone is not enough.</p>
+ </section>
+
+ <section class="section" aria-labelledby="budget-title">
+  <div class="dark">
+   <div>
+    <div class="eyebrow">Your parcel, your numbers</div>
+    <h2 id="budget-title">Budget beyond the item price.</h2>
+    <p>Use one currency throughout. Enter the total item cost and your own delivery estimates, then allow for service charges, payment fees and taxes.</p>
+    <p>This worksheet adds your inputs. It does not retrieve live shipping rates or calculate customs charges.</p>
+   </div>
+   <form id="calculator">
+    <div class="calc-grid">
+     <div class="field"><label for="items">Items subtotal</label><input id="items" type="number" min="0" max="100000000" step="0.01" value="0" inputmode="decimal"></div>
+     <div class="field"><label for="domestic">Domestic delivery</label><input id="domestic" type="number" min="0" max="100000000" step="0.01" value="0" inputmode="decimal"></div>
+     <div class="field"><label for="shipping">International delivery</label><input id="shipping" type="number" min="0" max="100000000" step="0.01" value="0" inputmode="decimal"></div>
+     <div class="field"><label for="extras">Fees &amp; tax allowance</label><input id="extras" type="number" min="0" max="100000000" step="0.01" value="0" inputmode="decimal"></div>
+    </div>
+    <div class="total"><output id="total" aria-live="polite">0.00</output></div>
+    <p class="calc-note">Estimated total in your chosen currency. Nothing is sent or saved.</p>
+   </form>
+  </div>
+ </section>
+
+ <section class="section" aria-labelledby="faq-title">
+  <div class="eyebrow">Clear answers</div>
+  <h2 id="faq-title">LitBuy spreadsheet FAQ.</h2>
+  <details open><summary>Is this the official LitBuy spreadsheet?</summary><p>No. This is an independent discovery guide. The catalog selection comes from HipobuyFind, and the shopping buttons open HipobuyFind. This page has no access to LitBuy accounts, orders or customer support records.</p></details>
+  <details><summary>Do these prices include international shipping?</summary><p>No. The displayed CNY amounts are catalog reference prices. Confirm the selected option, domestic delivery, international shipping, taxes and any service fees separately. A low starting price may correspond to a different option or quantity.</p></details>
+  <details><summary>Are the product images QC photos?</summary><p>No. These are source catalog listing images. Request and review photos of your own order before approving shipment. A photo alone does not establish authenticity, material quality or long-term durability.</p></details>
+  <details><summary>Can every product be purchased through LitBuy?</summary><p>Compatibility has not been verified. Retrieve the original marketplace link and confirm support and product restrictions with your chosen purchasing service before paying. The links on this page lead to HipobuyFind rather than a LitBuy checkout.</p></details>
+  <details><summary>How do I find the exact product after clicking?</summary><p>Record the source item ID displayed on the card, then locate that reference in the destination catalog. Product titles may change, so keep both the ID and the selected option in your notes.</p></details>
+  <details><summary>How current is this catalog selection?</summary><p>The eight references are a snapshot reviewed on 19 November 2026. This page does not synchronize live stock or prices. Open the destination catalog and original listing to verify current information.</p></details>
+  <details><summary>What should I do if a listing disappears?</summary><p>Search using the source item ID and product description. If you find a similar item, compare the seller, measurements, options and price again. A matching image does not prove it is the same listing.</p></details>
+ </section>
+
+ <section class="section">
+  <div class="ending">
+   <div class="eyebrow">Make your next choice count</div>
+   <h2>Your shortlist starts here.</h2>
+   <p>Explore the full HipobuyFind catalog and check the details that matter to you.</p>
+   <div class="actions" style="justify-content:center">
+    <a class="btn" href="https://hipobuyfind.com">LitBuy spreadsheet ↗</a>
+    <a class="btn outline" href="https://hipobuyfind.com">Buy it now ↗</a>
+   </div>
+  </div>
+ </section>
+</main>
+<footer>
+ <div class="wrap">
+  <div class="footer-row"><strong>LitBuy spreadsheet · Independent discovery guide</strong><span>Catalog source: HipobuyFind</span></div>
+  <p>This page provides product references and general shopping guidance. It does not sell products or accept payments. Brand and product names identify source listings and do not imply authorization, affiliation or authenticity. External websites handle their own orders, policies and data practices.</p>
+  <p>The filters and budget worksheet run in your browser. This document includes no analytics or tracking cookies. Loading remote product images connects your browser to the image host; opening shopping links connects you to HipobuyFind.</p>
+ </div>
+</footer>
+<script>
+(function(){
+"use strict";
+const search=document.getElementById("search");
+const category=document.getElementById("category");
+const budget=document.getElementById("budget");
+const cards=Array.from(document.querySelectorAll(".card"));
+function filter(){
+ const terms=search.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+ const selected=category.value;
+ const maximum=Number(budget.value);
+ let count=0;
+ cards.forEach(function(card){
+  const text=card.textContent.toLowerCase();
+  const show=terms.every(function(term){return text.includes(term)})&&
+   (selected==="all"||card.dataset.category===selected)&&Number(card.dataset.price)<=maximum;
+  card.hidden=!show;
+  if(show)count++;
+ });
+ document.getElementById("result").textContent=count+" of 8 catalog references · CNY item prices · Shipping extra";
+ document.getElementById("empty").hidden=count!==0;
+}
+search.addEventListener("input",filter);
+category.addEventListener("change",filter);
+budget.addEventListener("change",filter);
+const fields=["items","domestic","shipping","extras"].map(function(id){return document.getElementById(id)});
+function calculate(){
+ const sum=fields.reduce(function(total,field){
+  const value=Number(field.value);
+  return total+(Number.isFinite(value)?Math.min(100000000,Math.max(0,value)):0);
+ },0);
+ document.getElementById("total").textContent=sum.toLocaleString("en-US",{minimumFractionDigits:2,maximumFractionDigits:2});
+}
+fields.forEach(function(field){field.addEventListener("input",calculate)});
+document.getElementById("calculator").addEventListener("submit",function(event){event.preventDefault()});
+document.querySelectorAll(".photo img").forEach(function(img){
+ img.addEventListener("error",function(){
+  const message=document.createElement("span");
+  message.textContent="Listing image unavailable";
+  message.style.cssText="display:flex;align-items:center;justify-content:center;height:100%;padding:20px;text-align:center;font-size:13px;color:#586a61";
+  img.replaceWith(message);
+ },{once:true});
+});
+})();
+</script>
+</body>
+</html>
